@@ -2,46 +2,32 @@
 import { Portal } from '@/app/_utils'
 import { AnimatePresence } from 'motion/react'
 import * as motion from 'motion/react-client'
-import { ReactNode, useRef, useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { Link } from '../link'
-
-const links = [
-  'link - 0',
-  'link - 1',
-  'link - 2',
-  'link - 3',
-  'link - 4',
-  'link - 5'
-]
-
-const positions = [
-  'top-0 left-0',
-  'top-0 right-0',
-  'bottom-0 left-0',
-  'bottom-0 right-0'
-]
+import { links, squareMenuAtomsPositions as positions } from '@/app/_data'
 
 export const MenuSquare = () => {
   const [open, setOpen] = useState(false)
-  const buttonRef = useRef<HTMLButtonElement>(null)
 
   const toggleOpen = () => setOpen(prev => !prev)
 
   return (
     <>
-      <button
-        ref={buttonRef}
+      <motion.button
         className={twMerge(
-          'group relative h-2.5 w-2.5 cursor-pointer transition-all duration-500',
-          open && 'rotate-45 bg-white'
+          'group relative h-4 w-4 cursor-pointer transition-all duration-300 md:hidden',
+          open && 'rotate-135 bg-white'
         )}
+        whileTap={{
+          scale: 0.9
+        }}
         onClick={toggleOpen}
       >
-        {positions.map(position => (
-          <MenuSquareAtom key={position} position={position} open={open} />
+        {positions.map(classname => (
+          <MenuSquareAtom key={classname} classname={classname} open={open} />
         ))}
-      </button>
+      </motion.button>
       <Modal open={open} onClose={toggleOpen}>
         <AnimatePresence>
           {open && (
@@ -52,9 +38,7 @@ export const MenuSquare = () => {
               transition={{
                 duration: 1
               }}
-              className={twMerge(
-                'flex flex-col gap-1 bg-black p-4 text-white transition-all duration-500'
-              )}
+              className="flex flex-col gap-1 bg-black p-4 text-end text-white transition-all duration-500"
             >
               {links.map((link, index) => (
                 <motion.div
@@ -80,17 +64,17 @@ export const MenuSquare = () => {
 }
 
 const MenuSquareAtom = ({
-  position,
+  classname,
   open
 }: {
-  position: string
+  classname: string
   open?: boolean
 }) => (
   <span
     className={twMerge(
-      'absolute h-1 w-1 transition-all duration-500',
+      'absolute h-1.5 w-1.5 transition-all duration-500 group-hover:rotate-45',
       open ? 'scale-125 bg-black' : 'bg-white',
-      position
+      classname
     )}
   />
 )
@@ -112,11 +96,13 @@ const Modal = ({ open, onClose, children }: ModalProps) => (
       )}
       onClick={onClose}
     >
-      <div
-        className="absolute top-12 right-10"
-        onClick={e => e.stopPropagation()}
-      >
-        {children}
+      <div className="relative m-auto h-svh w-full max-w-[1440px]">
+        <div
+          className="absolute top-12 right-4"
+          onClick={e => e.stopPropagation()}
+        >
+          {children}
+        </div>
       </div>
     </div>
   </Portal>
