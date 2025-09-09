@@ -4,16 +4,16 @@
   --black: #111111;
   --red: #f22c36;
   --skeleton: #1e1e1e;
-  --text-primary: #929292;
-  --text-secondary: #e6e6e6;
+  --text-primary: #e6e6e6;
+  --text-secondary: #929292;
 }
 
 @theme inline {
   --color-black: var(--black);
   --color-red: var(--red);
   --color-skeleton: var(--skeleton);
-  --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
 
   --font-geist-mono: var(--font-geist-mono);
 }
@@ -27,15 +27,21 @@ body {
   font-family: var(--font-geist-mono);
 }
 
+figcaption,
 h1,
 h2,
 h3,
 p,
 strong {
   cursor: default;
+  color: var(--text-primary);
 }
 
-a.link::after {
+span {
+  color: var(--text-secondary);
+}
+
+a::after {
   content: '';
   position: absolute;
   height: 1px;
@@ -43,9 +49,42 @@ a.link::after {
   background-color: white;
   left: 0;
   bottom: 1px;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-a.link:hover::after {
+a:hover::after {
   width: 100%;
+}
+
+.open-in-new {
+  position: relative;
+}
+
+.open-in-new,
+.open-in-new::before,
+.open-in-new::after {
+  content: '';
+  width: 2px;
+  background-color: var(--color-primary);
+  position: absolute;
+  transition: all 1s;
+}
+
+.open-in-new {
+  position: relative;
+  height: 27px;
+}
+
+.open-in-new::after {
+  height: 27px;
+  transform: rotate(90deg);
+  right: 13px;
+  top: -13px;
+}
+
+.open-in-new::before {
+  height: 36px;
+  transform: rotate(45deg);
+  right: 13px;
+  top: -4px;
 }

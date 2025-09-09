@@ -17,7 +17,7 @@ export const MenuSquare = () => {
       <motion.button
         className={twMerge(
           'group relative h-4 w-4 cursor-pointer transition-all duration-300 md:hidden',
-          open && 'rotate-135 bg-white'
+          open && 'bg-primary rotate-135'
         )}
         whileTap={{
           scale: 0.9
@@ -38,7 +38,7 @@ export const MenuSquare = () => {
               transition={{
                 duration: 1
               }}
-              className="flex flex-col gap-1 bg-black p-4 text-end text-white transition-all duration-500"
+              className="flex flex-col gap-4 p-4 text-end transition-all duration-500"
             >
               {links.map((link, index) => (
                 <motion.div
@@ -52,7 +52,9 @@ export const MenuSquare = () => {
                   }}
                   key={link}
                 >
-                  <Link href="">{link}</Link>
+                  <Link className="text-4xl" href="">
+                    {link}
+                  </Link>
                 </motion.div>
               ))}
             </motion.div>
@@ -73,7 +75,7 @@ const MenuSquareAtom = ({
   <span
     className={twMerge(
       'absolute h-1.5 w-1.5 transition-all duration-500 group-hover:rotate-45',
-      open ? 'scale-125 bg-black' : 'bg-white',
+      open ? 'scale-125 bg-black' : 'bg-primary',
       classname
     )}
   />
@@ -91,18 +93,13 @@ const Modal = ({ open, onClose, children }: ModalProps) => (
       aria-modal="true"
       role="dialog"
       className={twMerge(
-        'fixed inset-0 z-50 flex bg-black/50',
+        'fixed inset-0 bg-black/70',
         open ? 'visible' : 'invisible'
       )}
       onClick={onClose}
     >
-      <div className="relative m-auto h-svh w-full max-w-[1440px]">
-        <div
-          className="absolute top-12 right-4"
-          onClick={e => e.stopPropagation()}
-        >
-          {children}
-        </div>
+      <div className="m-auto flex h-svh w-full max-w-[1440px] items-center justify-end backdrop-blur-sm">
+        <div onClick={e => e.stopPropagation()}>{children}</div>
       </div>
     </div>
   </Portal>

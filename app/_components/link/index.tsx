@@ -1,9 +1,16 @@
 import NextLink, { LinkProps } from 'next/link'
 import { ReactNode } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-export const Link = ({ ...props }: LinkProps & { children: ReactNode }) => (
+export const Link = ({
+  className,
+  ...props
+}: LinkProps & { className?: string; children: ReactNode }) => (
   <NextLink
     {...props}
-    className="link relative text-sm leading-[120%] text-white"
+    className={twMerge(
+      'text-primary text-md relative leading-[120%]',
+      className
+    )}
   />
 )
