@@ -1,7 +1,10 @@
-import Image from 'next/image'
+import product1 from '@/public/images/product_1.webp'
+import product2 from '@/public/images/product_2.webp'
+import product3 from '@/public/images/product_3.webp'
+import product4 from '@/public/images/product_4.webp'
+import product5 from '@/public/images/product_5.webp'
+import product6 from '@/public/images/product_6.webp'
 import { Link, Logo, MenuSquare, ProductCard } from './_components'
-import productOne from '@/public/images/product_one.webp'
-import { HTMLAttributes } from 'react'
 import { links } from './_data'
 
 export default function Home() {
@@ -26,13 +29,70 @@ export default function Home() {
           </h1>
           <div className="to-red mt-2 h-[76px] w-full bg-gradient-to-r from-black" />
         </section>
-        <ProductCard
-          alt="Produto 1"
-          description="Projeto grupo mensh - branding"
-          image={productOne}
-          locale="Brasil"
-          title="Grupo Mensch"
-        />
+        <section>
+          <ProductCard
+            alt="Produto 1"
+            description="Projeto grupo mensh - branding"
+            image={product1}
+            locale="Brasil"
+            title="Grupo Mensch"
+          />
+          <ProductCard
+            alt="Produto 2"
+            description="Projeto grupo mensh - branding"
+            image={product2}
+            locale="Brasil"
+            title="Grupo Mensch"
+          />
+        </section>
+        <section>
+          <div className="gap-5 md:grid md:grid-cols-3">
+            <div className="col-span-2">
+              <ProductCard
+                alt="Produto3"
+                description="Projeto grupo mensh - branding"
+                image={product3}
+                locale="Brasil"
+                title="Grupo Mensch"
+                small
+              />
+            </div>
+            <div>
+              <ProductCard
+                alt="Produto 4"
+                description="Projeto grupo mensh - branding"
+                image={product4}
+                locale="Brasil"
+                title="Grupo Mensch"
+                small
+              />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="gap-5 md:grid md:grid-cols-3">
+            <div>
+              <ProductCard
+                alt="Produto5"
+                description="Projeto grupo mensh - branding"
+                image={product5}
+                locale="Brasil"
+                title="Grupo Mensch"
+                small
+              />
+            </div>
+            <div className="col-span-2">
+              <ProductCard
+                alt="Produto 6"
+                description="Projeto grupo mensh - branding"
+                image={product6}
+                locale="Brasil"
+                title="Grupo Mensch"
+                small
+              />
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   )
