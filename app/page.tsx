@@ -140,6 +140,31 @@ export default function Home() {
             />
           </div>
         </section>
+        <section className="flex flex-col gap-4 md:gap-44">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-start md:gap-0">
+            <div className="flex flex-1 items-center justify-between gap-10">
+              <Logo />
+              <Link href="">Topo</Link>
+            </div>
+            <div className="flex flex-col items-start gap-6 md:mx-36 md:flex-row md:items-center md:gap-10">
+              {links.map(link => (
+                <Link key={link} href={`#${link}`}>
+                  {link}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <span className="divider block h-[1px] w-full bg-[#2b2b2b] md:hidden" />
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <span className="!text-primary">
+              © 2025 — GuySarmento | Todos os direitos reservados
+            </span>
+            <div className="flex flex-col gap-4">
+              <span className="!text-primary">+55(48)999496945</span>
+              <span className="!text-primary">guysarmento@gmail.com</span>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   )
