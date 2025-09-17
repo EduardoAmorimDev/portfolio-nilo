@@ -9,7 +9,7 @@ export const Link = ({
   <NextLink
     {...props}
     className={twMerge(
-      'text-primary text-md relative leading-[120%]',
+      'text-primary relative text-sm leading-[120%]',
       className
     )}
   />

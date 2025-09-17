@@ -1,4 +1,6 @@
 export * from './link'
 export * from './logo'
 export * from './menu-square'
+export * from './number-proof'
 export * from './product-card'
+export * from './text-title'

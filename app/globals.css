@@ -37,6 +37,10 @@ strong {
   color: var(--text-primary);
 }
 
+p {
+  font-size: 13px;
+}
+
 span {
   color: var(--text-secondary);
 }
