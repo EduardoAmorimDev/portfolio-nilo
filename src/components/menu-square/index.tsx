@@ -1,11 +1,18 @@
 'use client'
-import { Portal } from '@/app/_utils'
+import { Portal } from '@/src/utils'
 import { AnimatePresence } from 'motion/react'
 import * as motion from 'motion/react-client'
 import { ReactNode, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { Link } from '../link'
-import { links, squareMenuAtomsPositions as positions } from '@/app/_data'
+import { data } from '@/src/data'
+
+const squareMenuAtomsPositions = [
+  'top-0 left-0',
+  'bottom-0 left-0',
+  'bottom-0 right-0',
+  'top-0 right-0'
+]
 
 export const MenuSquare = () => {
   const [open, setOpen] = useState(false)
@@ -24,7 +31,7 @@ export const MenuSquare = () => {
         }}
         onClick={toggleOpen}
       >
-        {positions.map(classname => (
+        {squareMenuAtomsPositions.map(classname => (
           <MenuSquareAtom key={classname} classname={classname} open={open} />
         ))}
       </motion.button>
@@ -40,7 +47,7 @@ export const MenuSquare = () => {
               }}
               className="flex flex-col gap-4 p-4 text-end transition-all duration-500"
             >
-              {links.map((link, index) => (
+              {data.links.map((link, index) => (
                 <motion.div
                   initial={{ translateX: 50, opacity: 0 }}
                   animate={{ translateX: 0, opacity: 1 }}
@@ -98,7 +105,7 @@ const Modal = ({ open, onClose, children }: ModalProps) => (
       )}
       onClick={onClose}
     >
-      <div className="m-auto flex h-svh w-full max-w-[1440px] items-center justify-end backdrop-blur-sm">
+      <div className="m-auto flex h-svh w-full max-w-[1392px] items-center justify-end backdrop-blur-sm">
         <div onClick={e => e.stopPropagation()}>{children}</div>
       </div>
     </div>

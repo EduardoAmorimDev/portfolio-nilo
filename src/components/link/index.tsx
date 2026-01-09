@@ -5,11 +5,15 @@ import { twMerge } from 'tailwind-merge'
 export const Link = ({
   className,
   ...props
-}: LinkProps & { className?: string; children: ReactNode }) => (
+}: LinkProps & {
+  className?: string
+  children: ReactNode
+  target?: '_blank'
+}) => (
   <NextLink
     {...props}
     className={twMerge(
-      'text-primary relative text-sm leading-[120%]',
+      'text-primary link relative text-sm leading-[120%]',
       className
     )}
   />

@@ -1,0 +1,469 @@
+{
+  "links": ["projects", "about", "contacts", "products"],
+  "projects": [
+    {
+      "id": "01",
+      "images": [
+        {
+          "alt": "01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "02",
+          "src": "apply-02.webp"
+        },
+        {
+          "alt": "03",
+          "src": "apply-03.webp"
+        },
+        {
+          "alt": "04",
+          "src": "apply-04.webp",
+          "size": "small"
+        },
+        {
+          "alt": "05",
+          "src": "apply-05.webp",
+          "size": "small"
+        },
+        {
+          "alt": "06",
+          "src": "apply-06.webp"
+        },
+        {
+          "alt": "07",
+          "src": "apply-07.webp",
+          "size": "small"
+        },
+        {
+          "alt": "08",
+          "src": "apply-08.webp",
+          "size": "small"
+        },
+        {
+          "alt": "09",
+          "src": "apply-09.webp"
+        },
+        {
+          "alt": "10",
+          "src": "apply-10.webp"
+        }
+      ],
+      "local": "Belo Horizonte",
+      "name": "Grupo Mensch",
+      "socialProof": {
+        "name": "Alex Barbosa",
+        "role": "Founder CEO"
+      },
+      "slug": "grupo-mensch",
+      "type": "brand",
+      "url": "",
+      "year": "2023"
+    },
+    {
+      "id": "02",
+      "images": [
+        {
+          "alt": "01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "02",
+          "src": "apply-02.webp"
+        },
+        {
+          "alt": "03",
+          "src": "apply-03.webp"
+        },
+        {
+          "alt": "04",
+          "src": "apply-04.webp"
+        },
+        {
+          "alt": "05",
+          "src": "apply-05.webp"
+        },
+        {
+          "alt": "06",
+          "src": "apply-06.webp",
+          "size": "small"
+        },
+        {
+          "alt": "07",
+          "src": "apply-07.webp",
+          "size": "small"
+        },
+        {
+          "alt": "08",
+          "src": "apply-08.webp",
+          "size": "small"
+        },
+        {
+          "alt": "09",
+          "src": "apply-09.webp",
+          "size": "small"
+        },
+        {
+          "alt": "10",
+          "src": "apply-10.webp"
+        },
+        {
+          "alt": "11",
+          "src": "apply-11.webp"
+        },
+        {
+          "alt": "12",
+          "src": "apply-12.webp"
+        }
+      ],
+      "local": "Florianópolis",
+      "name": "VoltBras",
+      "slug": "volt-bras",
+      "type": "brand",
+      "url": "",
+      "year": "2023"
+    },
+    {
+      "id": "03",
+      "direction": "Evo Design",
+      "images": [
+        {
+          "alt": "John Martin Clothing - 01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "John Martin Clothing - 02",
+          "src": "apply-02.webp"
+        },
+        {
+          "alt": "John Martin Clothing - 03",
+          "src": "apply-03.webp",
+          "size": "small"
+        },
+        {
+          "alt": "John Martin Clothing - 04",
+          "src": "apply-04.webp",
+          "size": "small"
+        },
+        {
+          "alt": "John Martin Clothing - 05",
+          "src": "apply-05.webp"
+        },
+        {
+          "alt": "John Martin Clothing - 06",
+          "src": "apply-06.webp",
+          "size": "small"
+        },
+        {
+          "alt": "John Martin Clothing - 07",
+          "src": "apply-07.webp",
+          "size": "small"
+        },
+        {
+          "alt": "John Martin Clothing - 08",
+          "src": "apply-08.webp"
+        },
+        {
+          "alt": "John Martin Clothing - 09",
+          "src": "apply-09.webp"
+        }
+      ],
+      "local": "São Paulo",
+      "name": "John Martin Clothing",
+      "slug": "john-martin-clothing",
+      "type": "brand",
+      "url": "",
+      "year": "2024"
+    },
+    {
+      "id": "04",
+      "images": [
+        {
+          "alt": "01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "02",
+          "src": "apply-02.png"
+        },
+        {
+          "alt": "03",
+          "src": "apply-03.webp",
+          "size": "small"
+        },
+        {
+          "alt": "04",
+          "src": "apply-04.webp",
+          "size": "small"
+        },
+        {
+          "alt": "05",
+          "src": "apply-05.webp",
+          "size": "small"
+        },
+        {
+          "alt": "06",
+          "src": "apply-06.webp",
+          "size": "small"
+        },
+        {
+          "alt": "07",
+          "src": "apply-07.webp"
+        },
+        {
+          "alt": "08",
+          "src": "apply-08.webp",
+          "size": "small"
+        },
+        {
+          "alt": "09",
+          "src": "apply-09.webp",
+          "size": "small"
+        },
+        {
+          "alt": "10",
+          "src": "apply-10.webp"
+        },
+        {
+          "alt": "11",
+          "src": "11.webp",
+          "size": "small"
+        },
+        {
+          "alt": "12",
+          "src": "12.webp",
+          "size": "small"
+        }
+      ],
+      "local": "Portugal",
+      "name": "Evo Design",
+      "slug": "evo-design",
+      "type": "brand",
+      "url": "",
+      "year": "2024"
+    },
+    {
+      "id": "05",
+      "images": [
+        {
+          "alt": "01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "02",
+          "src": "apply-02.webp"
+        },
+        {
+          "alt": "03",
+          "src": "apply-03.webp"
+        },
+        {
+          "alt": "04",
+          "src": "apply-04.webp",
+          "size": "small"
+        },
+        {
+          "alt": "05",
+          "src": "apply-05.webp",
+          "size": "small"
+        },
+        {
+          "alt": "06",
+          "src": "apply-06.webp"
+        },
+        {
+          "alt": "07",
+          "src": "apply-07.webp",
+          "size": "small"
+        },
+        {
+          "alt": "08",
+          "src": "apply-08.webp",
+          "size": "small"
+        },
+        {
+          "alt": "09",
+          "src": "apply-09.webp",
+          "size": "small"
+        },
+        {
+          "alt": "10",
+          "src": "apply-10.webp",
+          "size": "small"
+        },
+        {
+          "alt": "11",
+          "src": "11.webp",
+          "size": "small"
+        },
+        {
+          "alt": "12",
+          "src": "12.webp",
+          "size": "small"
+        },
+        {
+          "alt": "13",
+          "src": "13.webp"
+        }
+      ],
+      "local": "Rio de Janeiro",
+      "name": "Ida Saúde Mental",
+      "slug": "ida-saude-mental",
+      "type": "site",
+      "url": "",
+      "year": "2025"
+    },
+    {
+      "id": "06",
+      "direction": "Care Intelligence",
+      "images": [
+        {
+          "alt": "01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "02",
+          "src": "apply-02.webp"
+        },
+        {
+          "alt": "03",
+          "src": "apply-03.webp"
+        },
+        {
+          "alt": "04",
+          "src": "apply-04.webp",
+          "size": "small"
+        },
+        {
+          "alt": "05",
+          "src": "apply-05.webp",
+          "size": "small"
+        },
+        {
+          "alt": "06",
+          "src": "apply-06.webp",
+          "size": "small"
+        },
+        {
+          "alt": "07",
+          "src": "apply-07.webp",
+          "size": "small"
+        },
+        {
+          "alt": "08",
+          "src": "apply-08.webp",
+          "size": "small"
+        },
+        {
+          "alt": "09",
+          "src": "apply-09.webp",
+          "size": "small"
+        }
+      ],
+      "local": "Rio Grande do Sul",
+      "name": "Docli",
+      "slug": "docli",
+      "type": "site",
+      "url": "",
+      "year": "2025"
+    },
+    {
+      "id": "07",
+      "direction": "Care Intelligence",
+      "images": [
+        {
+          "alt": "01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "02",
+          "src": "apply-02.webp"
+        },
+        {
+          "alt": "03",
+          "src": "apply-03.webp"
+        },
+        {
+          "alt": "04",
+          "src": "apply-04.webp",
+          "size": "small"
+        },
+        {
+          "alt": "05",
+          "src": "apply-05.webp",
+          "size": "small"
+        },
+        {
+          "alt": "06",
+          "src": "apply-06.webp",
+          "size": "small"
+        },
+        {
+          "alt": "07",
+          "src": "apply-07.webp",
+          "size": "small"
+        },
+        {
+          "alt": "08",
+          "src": "apply-08.webp",
+          "size": "small"
+        },
+        {
+          "alt": "09",
+          "src": "apply-09.webp",
+          "size": "small"
+        }
+      ],
+      "local": "Rio Grande do Sul",
+      "name": "Lívia",
+      "slug": "livia",
+      "type": "site",
+      "url": "",
+      "year": "2025"
+    },
+    {
+      "id": "08",
+      "direction": "Care Intelligence",
+      "images": [
+        {
+          "alt": "01",
+          "src": "apply-01.webp"
+        },
+        {
+          "alt": "02",
+          "src": "apply-02.webp"
+        },
+        {
+          "alt": "03",
+          "src": "apply-03.webp"
+        },
+        {
+          "alt": "04",
+          "src": "apply-04.webp",
+          "size": "small"
+        },
+        {
+          "alt": "05",
+          "src": "apply-05.webp",
+          "size": "small"
+        },
+        {
+          "alt": "06",
+          "src": "apply-06.webp",
+          "size": "small"
+        },
+        {
+          "alt": "07",
+          "src": "apply-07.webp",
+          "size": "small"
+        }
+      ],
+      "local": "Rio Grande do Sul",
+      "name": "Care Intelligence",
+      "slug": "care-intelligence",
+      "type": "site",
+      "url": "",
+      "year": "2025"
+    }
+  ]
+}
