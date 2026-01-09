@@ -9,9 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "fix-react2shell-next": "^1.1.4",
     "motion": "^12.23.12",
-    "next": "15.5.2",
-    "react": "19.1.0",
+    "next": "15.5.9",
+    "next-intl": "^4.5.3",
+    "react": "^19.1.0",
     "react-dom": "19.1.0",
     "tailwind-merge": "^3.3.1"
   },

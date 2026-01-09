@@ -1,0 +1,128 @@
+@import 'tailwindcss';
+
+:root {
+  --black: #111111;
+  --red: #f22c36;
+  --skeleton: #1e1e1e;
+  --text-primary: #e6e6e6;
+  --text-secondary: #929292;
+}
+
+@theme inline {
+  --color-black: var(--black);
+  --color-red: var(--red);
+  --color-skeleton: var(--skeleton);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+
+  --font-geist-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  font-family: var(--font-geist-mono);
+}
+
+figcaption,
+h1,
+h2,
+h3,
+p,
+strong {
+  cursor: default;
+  color: var(--text-primary);
+}
+
+p {
+  font-size: 13px;
+}
+
+span {
+  color: var(--text-secondary);
+}
+
+a.link::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  left: 0;
+  bottom: 1px;
+  transition: all 0.5s ease-out;
+}
+
+a.link:hover::after {
+  width: 100%;
+}
+
+.open-in-new {
+  position: relative;
+}
+
+.open-in-new,
+.open-in-new::before,
+.open-in-new::after {
+  content: '';
+  width: 2px;
+  background-color: var(--color-primary);
+  position: absolute;
+  transition: all 1s;
+}
+
+.open-in-new {
+  position: relative;
+  height: 27px;
+}
+
+.open-in-new::after {
+  height: 27px;
+  transform: rotate(90deg);
+  right: 13px;
+  top: -13px;
+}
+
+.open-in-new::before {
+  height: 36px;
+  transform: rotate(45deg);
+  right: 13px;
+  top: -4px;
+}
+
+.open-in-new-small {
+  position: relative;
+  display: block;
+}
+
+.open-in-new-small,
+.open-in-new-small::before,
+.open-in-new-small::after {
+  content: '';
+  width: 2px;
+  background-color: var(--color-primary);
+  position: absolute;
+  transition: all 1s;
+}
+
+.open-in-new-small {
+  position: relative;
+  height: 12px;
+}
+
+.open-in-new-small::after {
+  height: 12px;
+  transform: rotate(90deg);
+  right: 5px;
+  top: -5.5px;
+}
+
+.open-in-new-small::before {
+  height: 16px;
+  transform: rotate(45deg);
+  right: 5px;
+  top: -2px;
+}

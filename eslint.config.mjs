@@ -15,14 +15,7 @@ const eslintConfig = [
     plugins: ['prettier'],
     rules: {
       'prettier/prettier': 'error'
-    },
-    ignores: [
-      'node_modules/**',
-      '.next/**',
-      'out/**',
-      'build/**',
-      'next-env.d.ts'
-    ]
+    }
   })
 ]
 
